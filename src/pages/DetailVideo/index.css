@@ -1,0 +1,9 @@
+/* Hide scrollbar but keep scrolling functionality */
+.categoryItemScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.categoryItemScroll {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}

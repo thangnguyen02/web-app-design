@@ -1,0 +1,13 @@
+.sidebar {
+  background: linear-gradient(168.44deg, #2e335a 1.62%, #1c1b33 95.72%);
+}
+.tab-sidebar {
+  background: radial-gradient(
+    50% 128.57% at 50% -36.61%,
+    #8015a7 0%,
+    rgba(97, 54, 144, 0) 100%
+  );
+}
+.tab-sidebar .active-icon {
+  visibility: visible !important;
+}

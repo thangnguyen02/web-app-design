@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "category": "All"
+  },
+  {
+    "id": 2,
+    "category": "Gaming"
+  },
+  {
+    "id": 3,
+    "category": "Thoughts"
+  },
+  {
+    "id": 4,
+    "category": "Music"
+  },
+  {
+    "id": 5,
+    "category": "Thrillers"
+  },
+  {
+    "id": 6,
+    "category": "Mixes"
+  },
+  {
+    "id": 7,
+    "category": "Avatar"
+  },
+  {
+    "id": 8,
+    "category": "Film criticisma"
+  },
+  {
+    "id": 9,
+    "category": "Korean dramas"
+  },
+  {
+    "id": 10,
+    "category": "Characters"
+  },
+  {
+    "id": 11,
+    "category": "Eating"
+  }
+]

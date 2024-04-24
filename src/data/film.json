@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Design and Prototype an App with Play - Full 3-hour Course",
+    "thumbnail": "img1.png",
+    "duration": "4:30",
+    "author": { "name": "Designcode", "thumbnail": "author1.jfif" },
+    "view": "14k",
+    "dateAgo": "1 month"
+  },
+  {
+    "id": 2,
+    "title": "Create 3D Site with Spline and React - Full Course",
+    "thumbnail": "img2.png",
+    "duration": "12:30",
+    "author": { "name": "Designcode", "thumbnail": "author2.jfif" },
+    "view": "14k",
+    "dateAgo": "1 month"
+  },
+  {
+    "id": 3,
+    "title": "How to Use AI Art Generator on Midjourney",
+    "thumbnail": "img3.png",
+    "duration": "16:20",
+    "author": { "name": "midjourneyArt", "thumbnail": "author3.jfif" },
+    "view": "14k",
+    "dateAgo": "1 month"
+  },
+  {
+    "id": 4,
+    "title": "Desktop App UI Design in Figma - Full Course",
+    "thumbnail": "img4.png",
+    "duration": "40:36",
+    "author": { "name": "Designcode", "thumbnail": "author4.jfif" },
+    "view": "14k",
+    "dateAgo": "1 month"
+  },
+  {
+    "id": 5,
+    "title": "Design and Prototype an App with Play - Full 3-hour Course",
+    "thumbnail": "img5.png",
+    "duration": "5:50",
+    "author": { "name": "Designcode", "thumbnail": "author5.jfif" },
+    "view": "14k",
+    "dateAgo": "1 month"
+  },
+  {
+    "id": 6,
+    "title": "Build a 3D Site Without Code with Framer - Crash Course",
+    "thumbnail": "img6.png",
+    "duration": "54:30",
+    "author": { "name": "Designcode", "thumbnail": "author6.jfif" },
+    "view": "14k",
+    "dateAgo": "1 month"
+  }
+]

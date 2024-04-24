@@ -1,0 +1,35 @@
+.join {
+  border-bottom: 1px solid #564cac;
+  background: rgb(42, 39, 86);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 39, 86, 0.025669642857142905) 15%,
+    rgba(42, 39, 86, 0.5270702030812324) 52%,
+    #2a2756 97%
+  );
+}
+
+.subcriber {
+  background: rgb(117, 28, 156);
+  background: linear-gradient(
+    180deg,
+    rgba(117, 28, 156, 0) 15%,
+    rgba(117, 28, 156, 0.5186668417366946) 52%,
+    rgba(117, 28, 156, 1) 97%
+  );
+  border-bottom: 1px solid #e937fd;
+}
+.description {
+  background: radial-gradient(
+    50% 128.57% at 50% -36.61%,
+    #8015a77a 0%,
+    rgba(97, 54, 144, 0) 100%
+  );
+}
+.subDes {
+  background: linear-gradient(
+    180deg,
+    rgba(72, 49, 157, 0.2) 18.75%,
+    rgba(72, 49, 157, 0) 60%
+  );
+}

@@ -1,0 +1,7 @@
+.miniContent-card {
+  background: linear-gradient(
+    90deg,
+    rgba(88, 63, 178, 0.507) 18.75%,
+    rgba(72, 49, 157, 0.024) 90%
+  );
+}
