@@ -37,16 +37,16 @@ const SubDescription = ({ data }) => {
           </div>
         </div>
         <div className="join flex rounded-[20px] h-[40px] ">
-          <div className="text-[20px] text-[#ffffff99] px-6 py-3 flex items-center gap-2">
+          <div className="text-[16px] text-[#ffffff99] px-6 py-3 flex items-center gap-2">
             <SlLike /> 890
           </div>
           <div className="line-border-hoz"></div>
-          <div className="text-[20px] text-[#ffffff99] px-6 py-3 flex items-center gap-2">
+          <div className="text-[16px] text-[#ffffff99] px-6 py-3 flex items-center gap-2">
             <SlDislike />
           </div>
           <div className="line-border-hoz"></div>
 
-          <div className="text-[20px] text-[#ffffff99] px-6 py-3 flex items-center gap-2">
+          <div className="text-[16px] text-[#ffffff99] px-6 py-3 flex items-center gap-2">
             <IoIosNotificationsOutline size={20} />
             Share
           </div>
@@ -66,7 +66,7 @@ const SubDescription = ({ data }) => {
           design tool.
         </p>
         <p className="text-[#ffffff99] text-[16px] font-medium">
-          Sponsored by
+          Sponsored by &nbsp;
           <span className="underline cursor-pointer">https://reve.app</span> -
           create beautiful animated assets for app,sites and games
         </p>

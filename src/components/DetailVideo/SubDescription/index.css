@@ -8,7 +8,16 @@
     #2a2756 97%
   );
 }
-
+.join-button {
+  border-bottom: 1px solid #23d6ff;
+  background: rgb(42, 39, 86);
+  background: linear-gradient(
+    180deg,
+    rgba(42, 39, 86, 0.025669642857142905) 15%,
+    rgba(42, 39, 86, 0.5270702030812324) 52%,
+    #2a2756 97%
+  );
+}
 .subcriber {
   background: rgb(117, 28, 156);
   background: linear-gradient(

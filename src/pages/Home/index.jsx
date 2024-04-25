@@ -3,9 +3,9 @@ import NavBar from "../../layouts/NavBar";
 import SideBar from "../../layouts/SideBar";
 const Home = () => {
   return (
-    <div className="flex">
+    <div className="flex flex-wrap">
       <SideBar></SideBar>
-      <div>
+      <div className="w-[84%]">
         <NavBar />
         <ListVideo />
       </div>

@@ -8,7 +8,7 @@ const SideBar = () => {
   return (
     <div
       className={`${
-        showNav ? "w-[36%]" : "w-[6%]"
+        showNav ? "w-[16%]" : "w-[6%]"
       } sidebar pt-12 transition-all duration-100 delay-100 ease-in`}
     >
       <div className="flex gap-2 items-center px-6 py-2">
