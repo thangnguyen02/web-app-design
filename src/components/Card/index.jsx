@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Card = ({ data }) => {
   const navigate = useNavigate();
   return (
-    <div className="group w-[32%] h-[24vw] rounded-[16px] border border-solid border-transparent transition duration-500 hover:scale-110  delay-100 hover:z-10 mt-4">
+    <div className="group w-[32%] h-[22vw] rounded-[16px] border border-solid border-transparent transition duration-500 hover:scale-110  delay-100 hover:z-10 mt-4">
       <div className="relative">
         <img
           src={require(`../../img/${data.thumbnail}`)}

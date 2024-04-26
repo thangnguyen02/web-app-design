@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 const Author = () => {
   const { isShow } = useSelector((state) => state.ShowNavSlice);
   return (
-    <div className="flex">
+    <div className="flex backgroundApp">
       <SideBar></SideBar>
       <div
         className={`${

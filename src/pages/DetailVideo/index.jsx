@@ -12,7 +12,7 @@ const Nae = () => {
   const dataVideo = data.find((d) => d.id == id);
   const [active, setActive] = useState(1);
   return (
-    <div className=" w-full h-full">
+    <div className=" w-full h-full backgroundApp">
       <NavBar></NavBar>
       <div className="flex">
         <div className="w-[70%] px-5 mt-2">

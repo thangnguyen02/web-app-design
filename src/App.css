@@ -1,8 +1,3 @@
-.app {
-  max-width: 100vw;
-  min-height: 120vh;
-  background: linear-gradient(180deg, #2b2f53 3.16%, #1d1c34 36.05%);
-}
 .line-border {
   height: 1px;
   width: 70%;
@@ -13,6 +8,11 @@
     rgba(255, 255, 255, 0) 96.77%
   );
   background-blend-mode: overlay;
+}
+.backgroundApp {
+  max-width: 100vw;
+  min-height: 120vh;
+  background: linear-gradient(180deg, #2b2f53 3.16%, #1d1c34 36.05%);
 }
 .line-border-hoz {
   margin: 0;

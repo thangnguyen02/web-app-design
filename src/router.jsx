@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import DetailVideo from "./pages/DetailVideo";
 import Author from "./pages/Author";
-
+import Error from "./Shared/Error/Error";
 const router = [
   {
     id: 1,
@@ -56,6 +56,12 @@ const router = [
     path: "/downloads",
     name: "Downloads",
     element: <Home />,
+  },
+  {
+    id: 12,
+    path: "/404",
+    name: "Error",
+    element: <Error />,
   },
   {
     id: 10,
