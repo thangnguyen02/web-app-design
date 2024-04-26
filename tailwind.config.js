@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "card-bg":
-          "radial-gradient( 50% 128.57% at 50% -36.61%,#35297b 0%,#3e3265fc 100% )",
+          "radial-gradient(50% 128.57% at 50% -36.61%, #35297b 0%,#804090d2 100%)",
       },
     },
   },

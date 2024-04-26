@@ -4,12 +4,17 @@ import Member from "../../components/Author/Member/Member";
 import Menu from "../../components/Author/Menu/Menu";
 import NavBar from "../../layouts/NavBar";
 import SideBar from "../../layouts/SideBar";
-
+import { useSelector } from "react-redux";
 const Author = () => {
+  const { isShow } = useSelector((state) => state.ShowNavSlice);
   return (
     <div className="flex">
       <SideBar></SideBar>
-      <div className="w-[84%]">
+      <div
+        className={`${
+          isShow ? "w-[84%]" : "w-[94%]"
+        } transition-all duration-100 delay-100 ease-in`}
+      >
         <NavBar />
         <Information />
         <Menu />

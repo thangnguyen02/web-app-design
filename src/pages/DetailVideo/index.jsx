@@ -15,11 +15,11 @@ const Nae = () => {
     <div className=" w-full h-full">
       <NavBar></NavBar>
       <div className="flex">
-        <div className="w-[70%] px-5">
+        <div className="w-[70%] px-5 mt-2">
           <img
             src={require(`../../img/${dataVideo.thumbnail}`)}
             alt="anh"
-            className="w-[100%] h-[34vw] object-cover object-center mb-4"
+            className="w-[100%] h-[34vw] object-cover object-center rounded-t-[10px]"
           />
           <SubDescription data={dataVideo} />
         </div>

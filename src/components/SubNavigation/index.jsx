@@ -4,16 +4,18 @@ import { GoVideo } from "react-icons/go";
 import { MdOutlineMusicVideo } from "react-icons/md";
 import { MdSubscriptions } from "react-icons/md";
 import { useLocation, useNavigate } from "react-router-dom";
-const SubNavigation = ({ title, router, showNav }) => {
+import { useSelector } from "react-redux";
+const SubNavigation = ({ title, router }) => {
+  const { isShow } = useSelector((state) => state.ShowNavSlice);
   const location = useLocation();
   const navigate = useNavigate();
   return (
     <>
-      {title && showNav && (
+      {title && isShow && (
         <div>
           <div
             className={`${
-              showNav
+              isShow
                 ? "opacity-100 duration-100 delay-300 ease-out"
                 : "opacity-0 duration-0 delay-100 ease-in"
             } text-white text-opacity-50 text-[13px] font-semibold font-['SF Pro Text'] uppercase transition-opacity leading-[16.90px] px-3 py-3`}
@@ -30,7 +32,7 @@ const SubNavigation = ({ title, router, showNav }) => {
           } cursor-pointer transition duration-200 delay-75 hover:scale-105 group relative z-40`}
           onClick={() => navigate(r.path)}
         >
-          {!showNav && (
+          {!isShow && (
             <div className="absolute invisible group-hover:visible m-auto left-[60px] top-0 bottom-0 text-white w-full h-fit flex justify-center items-center z-50 bg-black rounded-[16px] py-1 shadow-sm shadow-blue-500/50">
               {r.name}
             </div>
@@ -51,7 +53,7 @@ const SubNavigation = ({ title, router, showNav }) => {
 
             <div
               className={`${
-                showNav
+                isShow
                   ? "opacity-100 duration-100 delay-300 ease-out"
                   : "opacity-0 duration-0 delay-100 ease-in"
               } text-[17px] font-semibold pl-2 transition-opacity `}

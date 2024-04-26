@@ -32,7 +32,7 @@ const SubVideo = ({ data }) => {
         </p>
       </div>
       <div className="content-card group-hover:bg-card-bg rounded-b-[16px] transition-colors duration-300 delay-100">
-        <div className="flex flex-wrap pt-4 transition duration-500 delay-100">
+        <div className="flex flex-wrap pt-2 transition duration-500 delay-100">
           <div className="w-[100%] mb-3 px-2 py-2">
             <p
               className="text-white font-bold text-[14px] hover:cursor-pointer"
