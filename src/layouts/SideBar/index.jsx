@@ -11,7 +11,7 @@ const SideBar = () => {
     <div
       className={`${
         isShow ? "w-[16%]" : "w-[6%]"
-      } sidebar pt-12 transition-all duration-100 delay-100 ease-in`}
+      } sidebar pt-12 transition-all duration-100 delay-100 ease-in h-[100vh] overflow-x-hidden overflow-y-auto`}
     >
       <div className="flex gap-2 items-center px-6 py-2">
         <div

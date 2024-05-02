@@ -8,7 +8,7 @@ const ListVideo = () => {
   return (
     <div className="w-[100%] px-6 ">
       <div className="category-border">
-        <div className="w-[100%] h-10 pl-4 rounded-[20px] shadow border border-transparent backdrop-blur-[20px] justify-around items-center gap-2 inline-flex flex-wrap ">
+        <div className="w-[100%] h-10 pl-4 rounded-[20px] shadow border border-transparent backdrop-blur-[20px] justify-around items-center gap-2 inline-flex overflow-hidden">
           {category.map((c) => (
             <div
               key={c.id}
@@ -25,7 +25,7 @@ const ListVideo = () => {
         </div>
       </div>
 
-      <div className=" flex justify-between flex-wrap mx-5 pb-32">
+      <div className=" flex justify-between flex-wrap flex-col mx-5 pb-32 md:flex-row">
         {video.map((v) => (
           <Card key={v.id} data={v} />
         ))}

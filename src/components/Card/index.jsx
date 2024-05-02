@@ -8,12 +8,12 @@ import { useNavigate } from "react-router-dom";
 const Card = ({ data }) => {
   const navigate = useNavigate();
   return (
-    <div className="group w-[32%] h-[22vw] rounded-[16px] border border-solid border-transparent transition duration-500 hover:scale-110  delay-100 hover:z-10 mt-4">
+    <div className="group w-[90%] h-[50vw] rounded-[16px] border border-solid border-transparent transition duration-500 hover:scale-110  delay-100 hover:z-10 mt-4 md:w-[32%] md:h-[22vw]">
       <div className="relative">
         <img
           src={require(`../../img/${data.thumbnail}`)}
           alt="Image 1"
-          className="w-[100%] h-[12vw] object-cover rounded-t-[16px] object-center"
+          className="w-[100%] h-[20vw] md:h-[12vw] object-cover rounded-t-[16px] object-center"
         />
         <div className="invisible group-hover:visible absolute bg-[#3c3d42] rounded-[5px] flex flex-wrap flex-col gap-1 py-2 items-center w-[8%] top-3 right-3 transition duration-1000 delay-300">
           <div className="cursor-pointer text-[#ffffff99] hover:text-white">

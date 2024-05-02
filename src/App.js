@@ -5,7 +5,7 @@ import { router } from "./router";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <div className="app">
+    <div className="app overflow-hidden">
       <BrowserRouter>
         <Routes>
           {router.map((r) => (

@@ -13,10 +13,8 @@ const Home = () => {
   const fetchData = async () => {
     dispatch(setLoading(true));
     const data = await axiosInstant.get("/user");
-    if (data) {
-      setData(data.data);
-      setTimeout(() => dispatch(setLoading(false)), 500);
-    }
+
+    setTimeout(() => dispatch(setLoading(false)), 500);
   };
   useEffect(() => {
     fetchData();
@@ -26,12 +24,12 @@ const Home = () => {
   const { isLoading } = useSelector((state) => state.LoadingSlice);
   return (
     <Loading isLoading={isLoading}>
-      <div className="flex flex-wrap backgroundApp">
+      <div className="flex flex-wrap backgroundApp overflow-hidden">
         <SideBar></SideBar>
         <div
           className={`${
             isShow ? "w-[84%]" : "w-[94%]"
-          } transition-all duration-100 delay-100 ease-in`}
+          } transition-all duration-100 delay-100 ease-in h-[100vh] overflow-y-auto`}
         >
           <NavBar />
           <ListVideo />

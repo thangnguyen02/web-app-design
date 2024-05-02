@@ -14,5 +14,5 @@ module.exports = {
       display: ["cardItems-hover"],
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
