@@ -1,41 +1,43 @@
 import ListVideo from "../../layouts/ListVideo";
 import NavBar from "../../layouts/NavBar";
 import SideBar from "../../layouts/SideBar";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import axiosInstant from "../../config/axiosConfig";
 import Loading from "../../Shared/Loading/Loading";
+import { setLoading } from "../../store/LoadingSlice";
 const Home = () => {
   const [data, setData] = useState(null);
-
+  const dispatch = useDispatch();
   const fetchData = async () => {
-    const data = await axiosInstant.get("/user/123", { name: 123 });
+    dispatch(setLoading(true));
+    const data = await axiosInstant.get("/user");
+    if (data) {
+      setData(data.data);
+      setTimeout(() => dispatch(setLoading(false)), 500);
+    }
   };
   useEffect(() => {
     fetchData();
   }, []);
+  console.log(data);
   const { isShow } = useSelector((state) => state.ShowNavSlice);
   const { isLoading } = useSelector((state) => state.LoadingSlice);
-  console.log(isLoading);
   return (
-    <>
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <div className="flex flex-wrap backgroundApp">
-          <SideBar></SideBar>
-          <div
-            className={`${
-              isShow ? "w-[84%]" : "w-[94%]"
-            } transition-all duration-100 delay-100 ease-in`}
-          >
-            <NavBar />
-            <ListVideo />
-          </div>
+    <Loading isLoading={isLoading}>
+      <div className="flex flex-wrap backgroundApp">
+        <SideBar></SideBar>
+        <div
+          className={`${
+            isShow ? "w-[84%]" : "w-[94%]"
+          } transition-all duration-100 delay-100 ease-in`}
+        >
+          <NavBar />
+          <ListVideo />
         </div>
-      )}
-    </>
+      </div>
+    </Loading>
   );
 };
 

@@ -59,7 +59,7 @@ const router = [
   },
   {
     id: 12,
-    path: "/404",
+    path: "*",
     name: "Error",
     element: <Error />,
   },
